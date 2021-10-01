@@ -6,3 +6,4 @@ Question 3: The browser shows a simple webpage with the text "Hello, world. You'
 
 Question 4: According to the Django documentation, the migrate command looks at the INSTALLED_APPS setting and creates any necessary database tables according to the database settings in your mysite/settings.py file. We need Django migration to update the database schema and create tables for the models we have just created. 
 
+Question 5: We see two tables once we login, one for authentication and authorization, and one for the Polls app we created (with Questions and Choices). To get custom models to appear in the admin page, we need to add the model to our models.py under some app (such as polls) and perform a Django migration.
