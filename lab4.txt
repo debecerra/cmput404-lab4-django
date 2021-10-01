@@ -2,14 +2,14 @@ Question 1: https://github.com/debecerra/cmput404-lab4-django
 
 Question 2: The browser shows us the default Django starting page with a little rocket ship and the text "The install worked successfully! Congratulations!"
 
-Question 3: The browser shows a simple webpage with the text "Hello, world. You're at the polls index."
+Question 3: When we navigate to "/", it gives us a 404 Page Not Found error. When we navigate to "/polls", the browser shows a simple webpage with the text "Hello, world. You're at the polls index."
 
 Question 4: According to the Django documentation, the migrate command looks at the INSTALLED_APPS setting and creates any necessary database tables according to the database settings in your mysite/settings.py file. We need Django migration to update the database schema and create tables for the models we have just created. 
 
-Question 5: We see two tables once we login, one for authentication and authorization, and one for the Polls app we created (with Questions and Choices). To get custom models to appear in the admin page, we need to add the model to our models.py under some app (such as polls) and perform a Django migration.
+Question 5: We see two tables once we log in, one for authentication and authorization, and one for the Polls app we created (with Questions and Choices). To get custom models to appear on the admin page, we need to add the model to our models.py under some app (such as polls) and perform a Django migration.
 
 Question 6: When we go to /polls/38, we get the text "You're looking at question 38." When we go to /polls/38/results, we get the text "You're looking at the results of question 38." When we go to /polls/38/vote, we get "You're voting on question 38." When we write a string instead of 38. we get a 404 error Not Found. To allow arbitrary parameters, we can modify the path parameter <int:question_id>/ to use another path converter, such as str (default). 
 
-Question 7: URLs could change over the development process of a project. If we have to change the URL, it is better to only have to change it on one place so that we don't have many parts of the code that could be pointing at bad URLs. 
+Question 7: URLs could change over the development process of a project. If we have to change the URL, it is better to only have to change it in one place so that we don't have many parts of the code that could be pointing at bad URLs. 
 
-Question 8: It is best to use generic views when we are working with the common case of getting data from the database according to a parameter passed in the URL, loading a template and returning the rendered template. Generic views help us write less redundant code. If we need create more customized views that don't follow this approach, we may not use generic views. For example, we don't use a generic view for vote.  
+Question 8: It is best to use generic views when we are working with the common case of getting data from the database according to a parameter passed in the URL, loading a template and returning the rendered template. Generic views help us write less redundant code. If we need to create more customized views that don't follow this approach, we may not use generic views. For example, we don't use a generic view for vote.  
