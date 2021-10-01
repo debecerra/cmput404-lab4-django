@@ -1,0 +1,5 @@
+Question 1: https://github.com/debecerra/cmput404-lab4-django
+
+Question 2: The browser shows us the default Django starting page with a little rocket ship and the text "The install worked successfully! Congratulations!"
+
+Question 3: The browser shows a simple webpage with the text "Hello, world. You're at the polls index."
